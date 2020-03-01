@@ -10,7 +10,7 @@ from config import config
 
 
 Base = declarative_base()
-configDto,err=config.Config().read(env=os.getenv("FLASK_ENV"))
+configDto,err=config.Config().read(env=os.getenv("APP_ENV"))
 conn ="mysql+pymysql://%s:%s@%s:%s/%s?charset=utf8"% (configDto.mysql.user,
 configDto.mysql.passwd,configDto.mysql.host,configDto.mysql.port,configDto.mysql.dbName)
 engine = create_engine(conn) 

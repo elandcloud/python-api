@@ -9,7 +9,7 @@ services:
     depends_on:
     - mysql-fruit-server
     environment:
-    - FLASK_ENV=example
+    - APP_ENV=example
     ports:
     - 8080:8080
   mysql-fruit-server:
