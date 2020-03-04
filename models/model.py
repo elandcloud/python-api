@@ -6,7 +6,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship,sessionmaker,scoped_session
 from sqlalchemy.types import TypeDecorator, VARCHAR
 import os
-from config import config
+from cfg import config
 
 
 Base = declarative_base()
